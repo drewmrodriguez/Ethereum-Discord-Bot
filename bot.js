@@ -1,6 +1,6 @@
 // Require dependencies
 const discord = require('discord.js');
-const keepAlive = require("./server.js");
+// const keepAlive = require("./server.js");
 const dotenv = require('dotenv');
 const axios = require('axios');
 
@@ -106,4 +106,4 @@ bot.on('message', async (message) => {
       }
   })
 
-  keepAlive();
+  // keepAlive();
