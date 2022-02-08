@@ -38,7 +38,7 @@ bot.on('message', async (message) => {
             );
 
             const gas  = await axios.get(
-                `https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=MBAXPIPM6B4JJG2IQ6QJ821W7A6VE3JR54`
+                `https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=5XGN9MSH3QK2AUGRVTZK1KQWHBKJUGFG4Q`
             );
             
 
@@ -82,7 +82,7 @@ bot.on('message', async (message) => {
           try {
             // Get crypto price from coingecko API
             const { data } = await axios.get(
-              `https://api.nomics.com/v1/currencies/ticker?key=18b4a318ccf5bc8f851947ce2edc79dd237b110f&ids=${coin}&interval=1d&convert=CAD&per-page=100&page=1`
+              `https://api.nomics.com/v1/currencies/ticker?key=54f5618aea696b56c1be2e6277c4d634c9c8ab37=${coin}&interval=1d&convert=CAD&per-page=100&page=1`
             );
 
     
