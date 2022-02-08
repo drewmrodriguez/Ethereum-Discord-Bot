@@ -23,13 +23,13 @@ bot.on('message', async (message) => {
     if (message.author.bot) return;
   
     // Reply to !ping
-    if (message.content.startsWith('$ping')) {
+    if (message.content.startsWith('!ping')) {
       return message.reply('I am working!');
     }
 
     // Reply to $ETH
-    if (message.content.startsWith('$ETH')) {
-        const [coin, vsCurrency] = ['ethereum','cad'];
+    if (message.content.startsWith('!gas')) {
+        const [coin, vsCurrency] = ['ethereum','usd'];
         const [low, average, high] = ['SafeGasPrice', 'ProposeGasPrice', 'FastGasPrice'];
         try {
             const { data } = await axios.get(
